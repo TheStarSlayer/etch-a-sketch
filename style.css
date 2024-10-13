@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    padding: 1.5rem;
+    color: white;
+    background-color: purple;
+}
+
+.game-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#draw-heading {
+    font-size: 28px;
+
+}
+
+.grid-container {
+    border: 2px solid black;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 1000px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+#option-heading {
+    display: inline-block;
+    margin-top: -25px;
+    background-color: white;
+    padding: 0.5rem;
+}
