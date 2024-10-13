@@ -26,25 +26,17 @@ body {
 
 #draw-heading {
     font-size: 28px;
-
-}
-
-.grid-container {
-    border: 2px solid black;
-    display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    height: 500px;
-    width: 1000px;
 }
 
 .options {
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid black;
+    border: 1px inset black;
     padding: 10px;
     gap: 30px;
     padding-right: 30px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 #option-heading {
@@ -52,4 +44,72 @@ body {
     margin-top: -25px;
     background-color: white;
     padding: 0.5rem;
+}
+
+.label-option {
+    display: flex;
+    gap: 10px;
+}
+
+.grid-container {
+    margin-top: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid-shadow {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid-shadow-red {
+    box-shadow: 0px 0px 30px 10px rgba(255, 0, 0, 0.3);
+}
+
+.grid-shadow-blue {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 255, 0.3);
+}
+
+.grid-shadow-green {
+    box-shadow: 0px 0px 30px 10px rgba(0, 255, 0, 0.3);
+}
+
+.grid-shadow-yellow {
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 0, 0.3);
+}
+
+.grid-shadow-purple {
+    box-shadow: 0px 0px 30px 10px rgba(128, 0, 128, 0.3);
+}
+
+.grid {
+    background-color: white;
+}
+
+.grid-black {
+    background-color: black;
+}
+
+.grid-red {
+    background-color: red;
+}
+
+.grid-blue {
+    background-color: blue;
+}
+
+.grid-green {
+    background-color: green;
+}
+
+.grid-yellow {
+    background-color: yellow;
+}
+
+.grid-purple {
+    background-color: purple;
 }
