@@ -6,10 +6,11 @@ const setSizeBtn = document.querySelector('#submit-grid-size');
 const allowShade = document.querySelector('#shade');
 
 let color = colorInput.value;
-let defaultNoOfGrids = 50, currentNoOfGrids;
+const DEFAULT_GRIDS = 50, MAX_GRIDS = 150;
+
 
 // Initialize grid using flex (first add a column, then add grids to it using flex: 1)
-function createCanvas(noOfGrids = defaultNoOfGrids) {
+function createCanvas(noOfGrids = DEFAULT_GRIDS) {
     for (let i = 0; i < noOfGrids; i++) {
         let gridCol = document.createElement('div');
         gridCol.classList.add('col');
@@ -163,9 +164,9 @@ gridSizeInput.addEventListener('change', () => {
 
 // Change grid size
 setSizeBtn.addEventListener('click', () => {
-    if (newNoOfGrids > 150) {
+    if (newNoOfGrids > MAX_GRIDS) {
         alert("Value is too big. Changing to default value........");
-        newNoOfGrids = defaultNoOfGrids;
+        newNoOfGrids = DEFAULT_GRIDS;
     }
     resizeCanvas(newNoOfGrids);
     gridSizeInput.value = '';
