@@ -164,4 +164,5 @@ gridSizeInput.addEventListener('change', () => {
 // Change grid size
 setSizeBtn.addEventListener('click', () => {
     resizeCanvas(newNoOfGrids);
+    setSizeBtn.setAttribute('disabled', '');
 })
