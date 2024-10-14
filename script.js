@@ -163,6 +163,11 @@ gridSizeInput.addEventListener('change', () => {
 
 // Change grid size
 setSizeBtn.addEventListener('click', () => {
+    if (newNoOfGrids > 150) {
+        alert("Value is too big. Changing to default value........");
+        newNoOfGrids = defaultNoOfGrids;
+    }
     resizeCanvas(newNoOfGrids);
+    gridSizeInput.value = '';
     setSizeBtn.setAttribute('disabled', '');
 })
