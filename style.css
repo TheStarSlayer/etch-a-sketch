@@ -51,65 +51,80 @@ body {
     gap: 10px;
 }
 
+#grid-size {
+    width: 60px;
+}
+
 .grid-container {
     margin-top: 10px;
+    padding: 0;
     border: 2px solid black;
     display: flex;
     flex-shrink: 0;
-    flex-wrap: wrap;
     height: 600px;
     width: 600px;
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+    gap: 0;
 }
 
-.grid-shadow {
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.3);
+.grid-shadow-black {
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.3);
 }
 
 .grid-shadow-red {
-    box-shadow: 0px 0px 30px 10px rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px 20px rgba(255, 0, 0, 0.3);
 }
 
 .grid-shadow-blue {
-    box-shadow: 0px 0px 30px 10px rgba(0, 0, 255, 0.3);
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 255, 0.3);
 }
 
 .grid-shadow-green {
-    box-shadow: 0px 0px 30px 10px rgba(0, 255, 0, 0.3);
+    box-shadow: 0px 0px 20px 20px rgba(0, 255, 0, 0.3);
 }
 
 .grid-shadow-yellow {
-    box-shadow: 0px 0px 30px 10px rgba(255, 255, 0, 0.3);
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.3);
 }
 
 .grid-shadow-purple {
-    box-shadow: 0px 0px 30px 10px rgba(128, 0, 128, 0.3);
+    box-shadow: 0px 0px 20px 20px rgba(128, 0, 128, 0.3);
+}
+
+.grid-shadow-rainbow {
+    box-shadow: 10px 0px 20px 20px rgba(128, 0, 128, 0.3), 0px 10px 20px 20px rgba(255, 0, 0, 0.3), -10px 0px 20px 20px rgba(0, 255, 0, 0.3), 0px -10px 20px 20px rgba(0, 0, 255, 0.3);
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .grid {
+    display: flex;
+    flex: 1;
     background-color: white;
 }
 
-.grid-black {
+.black {
     background-color: black;
 }
 
-.grid-red {
+.red {
     background-color: red;
 }
 
-.grid-blue {
+.blue {
     background-color: blue;
 }
 
-.grid-green {
+.green {
     background-color: green;
 }
 
-.grid-yellow {
+.yellow {
     background-color: yellow;
 }
 
-.grid-purple {
+.purple {
     background-color: purple;
 }
